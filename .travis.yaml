@@ -1,0 +1,6 @@
+language: python
+install:
+  - pip install goodtables
+script:
+  - make test
+  - make check_updated_data

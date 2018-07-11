@@ -1,0 +1,81 @@
+{
+  "name": "sics-brasil",
+  "title": "Lista de SIC do Brasil",
+  "description": "Informações dos SICs cadastrados no Sistema Eletrônico do Serviço de Informação ao Cidadão (e-SIC) do Governo Federal",
+  "sources": [{
+    "name": "Governo Federal do Brasil",
+    "path": "http://www.acessoainformacao.gov.br/lai-para-sic/sic-apoio-orientacoes/lista-de-sics"
+  }],
+  "contributors": [{
+    "name": "Vitor Baptista",
+    "path": "http://vitorbaptista.com",
+    "role": "author"
+  }],
+  "resources": [
+    {
+      "name": "sics-brasil",
+      "path": "data/sics-brasil.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+          "fields": [
+              {
+                  "name": "orgao",
+                  "type": "string",
+                  "format": "default"
+              },
+              {
+                  "name": "url",
+                  "type": "string",
+                  "format": "uri"
+              },
+              {
+                  "name": "nome_da_autoridade",
+                  "type": "string",
+                  "format": "default"
+              },
+              {
+                  "name": "endereco",
+                  "type": "string",
+                  "format": "default"
+              },
+              {
+                  "name": "cep",
+                  "type": "integer",
+                  "format": "default"
+              },
+              {
+                  "name": "municipio",
+                  "type": "string",
+                  "format": "default"
+              },
+              {
+                  "name": "uf",
+                  "type": "string",
+                  "format": "default"
+              },
+              {
+                  "name": "ddd",
+                  "type": "integer",
+                  "format": "default"
+              },
+              {
+                  "name": "telefone",
+                  "type": "integer",
+                  "format": "default"
+              },
+              {
+                  "name": "contato",
+                  "type": "string",
+                  "format": "default"
+              }
+          ]
+      }
+    },
+    {
+      "name": "lista-sics-maio-de-2018",
+      "path": "data/lista-sics-maio-de-2018.xlsx",
+      "url": "http://www.acessoainformacao.gov.br/lai-para-sic/lista-sics-maio-de-2018.xlsx",
+      "encoding": "windows-1252"
+    }
+  ]
+}
